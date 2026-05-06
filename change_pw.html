@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar -->
+<aside class="sidebar">
+        <!-- User Profile Section -->
+        <div class="user-profile">
+            <img src="default.jpg" alt="profile" class="profile-pic">
+            <h3>Sundar Gurung</h3>
+            <p>sundargurung360@gmail.com</p>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="#"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-exclamation-circle"></i> Vital Task</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i> My Task</a></li>
+                <li><a href="#"><i class="fas fa-list"></i> Task Categories</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logout -->
+        <div class="logout">
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="topbar">
+            <div class="logo">
+                <span class="logo-primary">Yuk</span><span class="logo-secondary">Kerjain!</span>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search your task here...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn"><i class="fas fa-envelope"></i></button>
+                <div class="topbar-date">Tuesday 20/06/2026</div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content account-content">
+            <div class="page-header">
+                <div>
+                    <h2>Change Password</h2>
+                </div>
+            </div>
+
+            <div class="account-card">
+                <div class="account-user">
+                    <img src="default.jpg" alt="profile" class="account-avatar">
+                    <div class="account-user-text">
+                        <h3>Sundar Gurung</h3>
+                        <p>sundargurung360@gmail.com</p>
+                    </div>
+                </div>
+
+            <!-- Form -->
+            <form method="POST" class="password-form">
+                <div class="form-group">
+                    <label>Current Password</label>
+                    <input type="password" name="current_password" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label>New Password</label>
+                    <input type="password" name="new_password" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" name="confirm_password" placeholder="">
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-primary">Update Password</button>
+                    <button type="button" class="btn-secondary">Cancel</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
